@@ -1,0 +1,89 @@
+
+
+CREATE TABLE manufacturer (
+man_id int NOT null PRIMARY key AUTO_INCREMENT,
+man_name varchar(255) not null,
+man_phone varchar(255) not null,
+man_email varchar(255) not null
+);
+
+CREATE TABLE stock	(
+    stk_id int not null PRIMARY key AUTO_INCREMENT,
+    stk_img varchar(255) NOT null,
+    stk_name varchar(255) NOT null,
+    cat_id int not null,
+	cat_name varchar(255) not null,
+	man_id int not null,
+    man_name varchar(255) not null,
+    stk_productiondate varchar(255) not null,
+    stk_cost varchar(255) not null,
+    stk_price varchar(255) not null,
+	stk_width varchar(255) not null,
+	stk_height varchar(255) not null,
+    stk_description varchar(255) not null
+
+);
+
+CREATE TABLE category (
+cat_id int NOT null PRIMARY KEY AUTO_INCREMENT,
+cat_name varchar(255) not null
+
+);
+
+CREATE TABLE customer(
+cus_id int NOT null PRIMARY KEY AUTO_INCREMENT,
+cus_email varchar(255) not null,
+cus_name varchar(255) not null,
+cus_password varchar(255) not null,
+cus_address varchar(255) ,
+cus_phone varchar(255),
+cus_gender varchar(255),
+cus_img varchar(255) not null
+);
+
+CREATE TABLE feedback(
+fee_id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+cus_id int not null,
+cus_name varchar(255) not null,
+fee_comment varchar(255) not null
+);
+
+CREATE TABLE orders(
+ord_id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+cus_id int not null,
+cus_address varchar(255) not null,
+cus_phone varchar(255) not null,
+ord_price varchar(255) not null,
+ord_status varchar(255) not null
+
+);
+
+CREATE TABLE cart(
+car_id int not null PRIMARY KEY AUTO_INCREMENT,
+stk_id int not null,
+cus_id int not null,
+stk_name varchar(255) not null,
+order_quantity varchar(255) NOT NULL,
+stk_price varchar(255) not null.
+car_addtime datetime not null
+);
+
+CREATE TABLE action(
+act_id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+emp_id int not null,
+act_date varchar(255) not null,
+stk_id int not null
+);
+
+CREATE TABLE employee(
+emp_id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+emp_name varchar(255) not null,
+emp_email varchar(255) not null,
+emp_phone varchar(255) not null,
+emp_address varchar(255) not null,
+emp_gender varchar(255) not null,
+emp_password varchar(255) not null,
+emp_img varchar(255) not null,
+emp_position varchar(255) not null,
+manager_id int not null
+)

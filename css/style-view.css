@@ -1,0 +1,163 @@
+﻿/*category-btn*/
+.cat-btn-container {
+	margin-top: 82px;
+	height: 60px;
+	border-bottom: 1px solid grey;
+	padding-top: 40px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.cat-txt {
+	border-radius: 20px;
+	border: 1px solid #e6e6e6;
+	background: #e6e6e6;
+	width: 100px;
+	padding: 7px 10px;
+	height: 50px;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.cat-txt:hover {
+	background: #cccccc;
+	cursor: pointer;
+}
+
+/*product-grid*/
+.product-grid img {
+	margin: 7px auto;
+	height: 360px;
+	width: 360px;
+	transition: transform .2s;
+}
+
+.pro-img:hover {
+	-ms-transform: scale(1.05);
+	/* IE 9 */
+	-webkit-transform: scale(1.05);
+	/* Safari 3-8 */
+	transform: scale(1.05);
+}
+
+.product-grid {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 25px;
+	margin-top: 40px;
+}
+
+.product-grid-content {
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fill, min(420px));
+	grid-auto-rows: minmax(100px, auto);
+	grid-gap: 50px;
+	outline-color: none;
+}
+
+.product-grid-content a {
+	text-decoration: none;
+	color: black;
+}
+
+.product-grid-content a span {
+	letter-spacing: 0.1em;
+	font-weight: 100;
+	font-family: 'Cinzel', serif;
+}
+
+.product-grid-content a:hover {}
+
+.product-link {
+	margin-top: 15px;
+}
+
+.product-link a {
+	border: 0.5px solid black;
+	padding: 10px;
+	font-size: 16px;
+
+}
+
+.product-link a:hover {
+	color: white;
+	background: black;
+	border: 0.5px solid white;
+	text-decoration: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */
+	height: 100%;
+	width: 0;
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: rgb(0, 0, 0);
+	/* Black fallback color */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Black w/opacity */
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+	position: relative;
+	top: 25%;
+	/* 25% from the top */
+	width: 100%;
+	/* 100% width */
+	text-align: center;
+	/* Centered text/links */
+	margin-top: 30px;
+	/* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	/* Display block instead of inline */
+	transition: 0.3s;
+	/* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px
+	}
+
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+

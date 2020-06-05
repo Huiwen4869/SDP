@@ -1,0 +1,68 @@
+﻿html, body {
+	width: auto!important; 
+	overflow-x: hidden!important;
+} 
+.container1{
+    text-align: left;
+    padding:10px 30px;
+    height: auto;
+    min-height: 250px;
+    position: relative;
+    width:130%;
+    left:100%;
+    margin-top:90px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background: rgb(31, 64, 96);
+    border-radius: 15px;
+    color: white;
+    font-family: Open Sans;
+}
+
+form input[type=text],
+input[type=date],
+input[type=section],
+select{
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 1px #ecf2f9 solid;
+	color: #ecf2f9;
+	width: 99%;
+	padding: 10px 2px;
+	font-size: 16px;
+	font-family: Open Sans;
+	margin-top: 10px;
+}
+
+label{
+	font-size: 16px;
+	font-family: Open Sans;
+}
+
+form input[type=submit]{
+	margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    border: none;
+    color: #0B2C45;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-transform:uppercase;
+    margin-bottom: 20px;
+}
+
+form input[type=submit]:hover{
+	background-color: #000;
+    color: #fff;
+}
+
+.fld{
+	margin-bottom: 0px;
+}
+
+.title{
+	padding-top: 20px;
+}

@@ -1,0 +1,29 @@
+.head{
+    float: left;
+    left:10%;
+    top:10%;
+    position: absolute;
+}
+.create{
+    float: right;
+    margin-top:5%;
+    right:10%;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+.container1{
+    text-align: left;
+    padding:10px;
+    width:30%;
+    position: relative;
+    width:100%;
+    left:80%;
+    margin-top:90px;
+    background-color: rgb(11, 13, 89);
+    color:white;
+    border-radius: 5px;
+}

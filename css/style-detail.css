@@ -1,0 +1,375 @@
+﻿.table {
+	border-collapse: separate;
+	border-spacing: 1em;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.profile {
+	width: 75%;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 17px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	float: left;
+	width: 30%;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 70%;
+	padding-left: 20px;
+}
+
+.card img {
+	padding: 20px 5px;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.line1 {
+	border-top: 2px solid #cccccc;
+}
+
+/* Add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px solid #d9d9d9;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1500px) {
+
+	.leftcolumn,
+	.rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.responsive-form {
+	max-width: 600px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.form-row {
+	width: 100%;
+}
+
+.column-full,
+.column-half {
+	float: left;
+	position: relative;
+	padding: 0.65 em;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.profile .uname {
+	width: 80%;
+	border: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 6px 8px;
+	margin: 6px 0;
+	display: inline-block;
+	border-radius: 4px;
+}
+
+.profile input[type=num] {
+	width: 40%;
+	border: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 6px 8px;
+	margin: 6px 0;
+	display: inline-block;
+
+}
+
+
+.form-row input[type=text],
+.profile input[type=email] {
+	width: 90%;
+	padding: 15px 10px;
+	margin: 14px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 17px;
+}
+
+.profile textarea {
+	width: 95%;
+	padding: 15px 10px;
+	margin: 14px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 80px;
+	font-size: 17px;
+}
+
+.form-row input[type=text],
+.profile input[type=email],
+.profile input[type=hidden],
+.profile textarea,
+.uname:hover {
+	cursor: default;
+	outline: none;
+}
+
+.cart-action {
+	color: grey;
+}
+
+.profile .button {
+	color: white;
+	background: #0086b3;
+	padding: 10px 10px;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	float: right;
+	width: 60%;
+	margin: 10px 0;
+}
+
+.cart-action input[type=number] {
+	padding: 10px 5px;
+	margin: 10px 0;
+	border: 1px solid grey;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 26%;
+	font-size: 17px;
+	text-align: center;
+}
+
+.cart-action input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+.item-name input[type=text] {
+	border: none;
+	outline: none;
+	font-size: 33px;
+	font-family: Arial;
+	letter-spacing: 0.12em;
+	margin: 16px auto;
+}
+
+.item-name span {
+	color: #737373;
+	font-size: 18px;
+	font-family: 'PT Sans', serif;
+	display: block;
+	line-height: 30px;
+	margin-top: -20px;
+}
+
+.item-name span input[type=text] {
+	font-size: 18px;
+	font-family: 'PT Sans', serif;
+	color: #737373;
+	letter-spacing: normal;
+
+}
+
+
+/**---------------- Media query ----------------**/
+@media only screen and (min-width: 48em) {
+	.column-half {
+		width: 50%;
+	}
+}
+
+
+/* Popup container - can be anything you want */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.profile a:link {
+	color: black;
+	text-decoration: underline;
+}
+
+.profile a {
+	text-decoration: underline;
+	font-size: 17px;
+}
+
+/* visited link */
+.profile a:visited {
+	color: #262626;
+	text-decoration: underline;
+}
+
+/* mouse over link */
+.profile a:hover {
+	color: #595959;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/*form pop up*/
+.content {
+	padding: 10px 40px 20px 40px;
+
+}
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 20%;
+	/* Could be more or less, depending on screen size */
+}
+
+.close {
+	float: right;
+	padding: 10px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #262626;
+}
+
+.close:hover,
+.close:focus {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.responsive-form input[type=submit] {
+	background-color: #262626;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: 'Fira Sans', sans-serif;
+	border-radius: 6px;
+	width: 100%;
+
+}
+
+.responsive-form input[type=submit]:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+

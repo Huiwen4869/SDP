@@ -1,0 +1,90 @@
+﻿html {
+    background-color: #eae5e1;
+    background-repeat: no-repeat;
+    background-image: url('https://images.prismic.io/hart-co%2Fe61c900e-3db6-4382-bd9d-c3e43ee8d5f4_kinglivingw19_zazawhite_brandfemale_v1.jpg?auto=format&rect=0,0,5119,3381&w=1920&h=1268');
+    background-size: 89.6vw;
+    background-position: center 4vw;
+}
+body {
+  font-family: 'Merienda';
+  font-size: 1.5vw;
+  color: #000;
+}
+a {
+  color: #1e597b;
+}
+
+p{
+  position: absolute;
+  bottom: 0;  
+  margin-bottom: 0.4vw;
+}
+#row2b{
+  text-align:right;
+}
+#row2b > p{
+  font-family: 'Merienda One';
+  position: relative;
+  font-size: 3vw;
+  font-weight:bold;
+  color: #8f3d4c;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  
+}
+#row2b > p:nth-child(1){
+  margin-top: 5vw;
+}
+#row2b > p:nth-child(2){
+  margin-top: -1vw;
+  font-size: 3.5vw;
+}
+
+#row4c > p span{
+  display:block;
+  line-height: 50px;
+  margin-left: 7px;
+}
+
+#row4c > p{
+  border-left: 2.5px solid black;
+  margin-left: 0.5vm;
+}
+
+#grid {
+  display: grid;
+  grid-gap: 0.5vw; 
+  grid-template-rows: 3vw;
+  grid-auto-rows: 9vw;
+  grid-template-columns: 1fr repeat(6, 4fr) 1fr;
+}
+
+#grid > div{
+  position: relative;
+  background-color:#eae5e1;
+  outline-style: solid;
+  outline-color: #eae5e1;
+  outline-width: 0.5vw;  
+}
+
+div#row1a,div#row2a,div#row3a,div#row3b,div#row4a,div#row4b,div#row5a,div#row5b{
+  background-color:rgba(55,55,55,0.4);
+}
+
+#row1a, div#row5a{
+  grid-column-end: span 3;
+}
+
+div#row4b{
+  grid-column-end: span 1;
+
+}
+
+#row1b, div#row2b, div#row3b, div#row5b{
+  grid-column-end: span 2;
+}
+
+div#row2b{
+  grid-row-end: span 2;
+}
+

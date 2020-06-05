@@ -1,0 +1,169 @@
+﻿.profile-title{
+	text-align:center;
+	margin-top:110px;
+	font-family: sans-serif;
+	letter-spacing: 0.3em;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+.ctn {
+	width: 90%;
+	border-top-color: maroon;
+	margin-top: auto;
+	border: 3px solid maroon;
+	font-family: sans-serif;	
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 30%;
+	margin: 5px;
+	text-align: center;
+	font-family: arial;
+	float:left;
+	min-height: 610px;
+}
+
+.detail {
+	width: 65%;
+	margin: 8px;
+	text-align: center;
+  	font-family: arial;
+  	float:right;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  	font-size: 20px;
+  	min-height: 610px;
+
+}
+
+.card .title {
+	color: grey;
+  	font-size: 18px;
+  	margin-top: -13px;
+}
+
+.ctn button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 8px;
+	border-radius: 20px;
+}
+
+.ctn a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+.ctn button:hover,
+.ctn a:hover {
+	opacity: 0.7;
+}
+
+.pro-form input[type=text],
+.pro-form input[type=email],
+.pro-form textarea{
+	width: 90%;
+	padding: 15px 10px;
+	margin: 14px 0;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+.pro-form input[type=submit]{
+	border-radius:5px;
+	color:white;
+	background:#262626;
+	padding:15px 20px;
+	cursor:pointer;
+	border:none;
+	width:100%;
+	font-size: 20px;
+}
+
+.pro-form input[type=submit]:hover{
+	opacity:0.8;
+}
+
+.content{
+	padding:10px 40px 20px 40px;
+	
+}
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 20%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+	float:right;
+	padding:10px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #262626;
+}
+
+.close:hover,
+.close:focus {
+	opacity:0.8;
+	cursor: pointer;
+}
+
+.pro-form input[type=password]  {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 10px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1; 
+	font-size: 20px;
+}
+
+.pro-form input[type=password]:focus{
+	background-color: #ddd;
+	outline: none;
+}
+
+.pro-form input[type=submit] {
+	background-color: #262626;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: 'Fira Sans', sans-serif;
+	border-radius:6px;
+	width:100%;
+	font-size: 20px;
+}
+
+.pro-form input[type=submit]:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
